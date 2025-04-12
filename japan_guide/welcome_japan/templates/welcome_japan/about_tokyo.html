@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Японии</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .link {
+            display: block;
+            margin: 10px 0;
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>О Японии</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Краткое описание</h2>
+            <p>Япония — островное государство в Восточной Азии, известное своей богатой культурой, технологическими инновациями и уникальными традициями. Страна сочетает в себе древние обычаи и современный образ жизни, что делает её уникальной и привлекательной для туристов со всего мира.</p>
+
+            <h2>Историческая справка</h2>
+            <p>История Японии насчитывает тысячи лет. Период Эдо (1603-1868) был временем изоляции и внутреннего развития, когда страна закрылась от внешнего мира. С приходом эпохи Мэйдзи в 1868 году Япония начала активно модернизироваться, что привело к её превращению в одну из ведущих мировых держав.</p>
+
+            <h2>Основные достопримечательности</h2>
+            <ul>
+                <li><strong>Токио</strong>: Столица Японии, известная своими небоскребами, оживленными улицами и традиционными кварталами.</li>
+                <li><strong>Киото</strong>: Культурная столица с множеством исторических храмов, садов и традиционных чайных церемоний.</li>
+                <li><strong>Гора Фудзи</strong>: Высочайшая вершина Японии, покрытая снегом, и одно из самых известных мест в стране.</li>
+                <li><strong>Хиросима</strong>: Город, известный своим Мемориалом мира, посвященным событиям Второй мировой войны.</li>
+            </ul>
+
+            <div>
+                <a href="{% url 'welcome' %}" class="link">Вернуться на главную</a>
+            </div>
+
+            <h2>Популярные статьи</h2>
+            <a href="#" class="link">История Японии: от древности до наших дней</a>
+            <a href="#" class="link">Топ-10 мест, которые стоит посетить в Японии</a>
+            <a href="#" class="link">Культура и традиции Японии</a>
+        </div>
+    </main>
+</body>
+</html>
