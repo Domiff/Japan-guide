@@ -16,13 +16,12 @@
             <h2>Места, которые обязательно нужно посетить</h2>
             <ul>
                 <li>
-                   <a href="{% url 'tokyo' %}" class="link">Токио</a>
+                   <a href="{% url 'tokyo' %}" class="link">{{ places.name }}</a>
                     <p>
-                        Столица Японии, известная своими небоскребами, оживленными улицами и традиционными кварталами,
-                        такими как Асакуса.
+                        {{ places.description }}
                     </p>
                     {% load static %}
-                    <img class="image" src="{% static 'welcome_japan/images/tokyo.jpeg' %}" alt="Tokyo">
+                    <img class="image" src="{% static 'welcome_japan/images/Tokyo, Japan_.jpeg' %}" alt="Tokyo">
                 </li>
                 <li>
                     <h3>Киото</h3>
@@ -61,6 +60,7 @@
                     <p>Традиционные деревни с домами в стиле гассё, занесенные в список Всемирного наследия ЮНЕСКО.</p>
                 </li>
             </ul>
+            <a href="{% url 'about' %}" class="link">О Японии</a>
         </div>
     </main>
 </body>
